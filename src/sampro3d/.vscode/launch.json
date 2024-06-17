@@ -1,0 +1,89 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "main debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "cwd": "/mnt/luoly/SAMPro3D-main",
+            "env": {
+                "CUDA_LAUNCH_BLOCKING": "1",
+            },
+            "args": [
+                "--data_path",
+                "dataset/530_scannet_table0/",
+                "--scene_name",
+                "scene0000_01",
+                "--prompt_path",
+                "dataset/530_scannet_table0/scene0000_01/initial_prompt",
+                "--sam_output_path",
+                "dataset/530_scannet_table0/scene0000_01/SAM_outputs",
+                "--pred_path",
+                "dataset/530_scannet_table0/scene0000_01/sampro3d_predictions",
+                "--output_vis_path",
+                "dataset/530_scannet_table0/scene0000_01/visualization",
+                "--device",
+                "cuda:4",
+            ]
+        },
+        {
+            "name": "get_output_for_asgs",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "get_output_for_asgs.py",
+            "console": "integratedTerminal",
+            "cwd": "/mnt/luoly/SAMPro3D-main",
+            "env": {
+                // "CUDA_LAUNCH_BLOCKING": "1",
+                // "CUDA_VISIBLE_DEVICES": "4",
+            },
+            "args": [
+                "--data_path",
+                "dataset/530_scannet_table0",
+                "--scene_name",
+                "scene0000_01",
+                "--prompt_path",
+                "dataset/530_scannet_table0/scene0000_01/initial_prompt",
+                "--sam_output_path",
+                "dataset/530_scannet_table0/scene0000_01/SAM_outputs",
+                "--pred_path",
+                "dataset/530_scannet_table0/scene0000_01/sampro3d_predictions",
+                "--output_vis_path",
+                "dataset/530_scannet_table0/scene0000_01/visualization",
+                "--device",
+                "cuda:4",
+            ]
+        },
+        {
+            "name": "3d_prompt_proposal_with_gt_mask",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "3d_prompt_proposal_with_gt_mask.py",
+            "console": "integratedTerminal",
+            "cwd": "/mnt/luoly/SAMPro3D-main",
+            "env": {
+                // "CUDA_LAUNCH_BLOCKING": "1",
+                // "CUDA_VISIBLE_DEVICES": "4",
+            },
+            "args": [
+                "--data_path",
+                "dataset/530_scannet_table0",
+                "--scene_name",
+                "scene0000_01",
+                "--prompt_path",
+                "dataset/530_scannet_table0/scene0000_01/initial_prompt",
+                "--sam_output_path",
+                "dataset/530_scannet_table0/scene0000_01/SAM_outputs",
+                "--device",
+                "cuda:4",
+                "--voxel_size",
+                "1.0"
+            ]
+        }
+    ]
+}

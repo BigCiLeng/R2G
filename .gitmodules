@@ -1,0 +1,9 @@
+[submodule "src/assist-gs"]
+	path = src/assist-gs
+	url = https://github.com/BigCiLeng/assist-gs.git
+[submodule "src/sampro3d"]
+	path = sampro3d
+	url = https://github.com/BigCiLeng/sampro3d.git
+[submodule "src/cutie"]
+	path = src/cutie
+	url = https://github.com/hkchengrex/Cutie.git

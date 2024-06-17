@@ -1,0 +1,6 @@
+dataset/*
+*.pth
+*.zip
+.DS_Store
+*.pyc
+libs/*
