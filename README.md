@@ -207,13 +207,8 @@ Example Result:
 TODO
 
 Example Result:
-<video width="320" height="240" controls>
-    <source src="movie.mp4" type="video/mp4">
-</video>
-<video width="320" height="240" controls>
-    <source src="movie.mp4" type="video/mp4">
-</video>
-https://github.com/BigCiLeng/R2G/assets/59920768/84810dba-361a-4f6e-8727-47e87112cca9
+https://github.com/BigCiLeng/R2G/assets/59920768/855f76d6-4d90-46e2-b207-e86c8e51ff12
+https://github.com/BigCiLeng/R2G/assets/59920768/3e11075c-8ddb-4249-8a6c-e56af150b4bc
 
 ## Prepare your own datasets
 
