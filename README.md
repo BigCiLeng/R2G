@@ -207,8 +207,13 @@ Example Result:
 TODO
 
 Example Result:
-![sim0](assets/sim0.mp4)
-![sim1](assets/sim1.mp4)
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+</video>
+https://github.com/BigCiLeng/R2G/assets/59920768/84810dba-361a-4f6e-8727-47e87112cca9
 
 ## Prepare your own datasets
 
