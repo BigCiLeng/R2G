@@ -158,7 +158,34 @@ Example Result:
 
 ### LLM Label Annotations
 
-TODO
+gpt4_method_json: 
+
+```json
+// template.json must follow the example shown below
+{
+	"instance_id": "",
+	"label": {
+		"name": "",
+		"color": "",
+		"description": "a red apple"
+	}, 
+	"physics": {
+		"mass": "200",
+		"collider": "convexHull",
+		"rigid_body": "cube"
+	}
+}
+
+// instance_color_map.json must follow the exmaple shown below
+{
+    "0": [0, 0, 0],
+    "1": [255, 0, 0],
+    "2": [0, 255, 0],
+    "3": [0, 0, 255],
+    "4": [255, 255, 0],
+    "5": [255, 0, 255]
+}
+```
 
 Example Result:
 
